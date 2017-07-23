@@ -1,0 +1,10 @@
+<h1>Your Shopping Cart</h1>
+
+<%= form_tag('/products') do %>
+  <label>Add Item to Cart:</label>
+  <div><input type="text" name="product"></div>
+  <br>
+  <div><button id="add to cart">Add to cart</button></div>
+<% end %>
+
+<%= @cart %>
